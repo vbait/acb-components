@@ -1,0 +1,44 @@
+{
+  "name": "@vbait/components-core",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/acb-components/acb-components.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "lint": "eslint src/**/*{.ts,.tsx}",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^3.0.0"
+  },
+  "devDependencies": {
+    "@stencil-community/eslint-plugin": "^0.5.0",
+    "@stencil-community/postcss": "^2.1.0",
+    "@types/autoprefixer": "^10.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "autoprefixer": "^10.4.13",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "^19.5.2"
+  },
+  "license": "MIT"
+}

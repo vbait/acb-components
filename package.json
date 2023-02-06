@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "description": "mono-repo root package.json, used mainly to execute build scripts. This package is not published to npm.",
+  "devDependencies": {
+    "lerna": "^6.4.1",
+    "semver": "^5.5.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "name": "acb-components"
+}
