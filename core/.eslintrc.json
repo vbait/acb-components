@@ -1,9 +1,13 @@
 {
+  "root": true,
+  "extends": ["plugin:@stencil-community/strict"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "extends": ["plugin:@stencil-community/strict"],
   "rules": {
-    "@stencil-community/strict-boolean-conditions": 0
+    "@stencil-community/strict-boolean-conditions": 0,
+
+    "comma-dangle": [2, "always-multiline"]
   }
 }
