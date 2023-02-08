@@ -27,6 +27,11 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return (
+      <div>
+        Hello, World! I'm {this.getText()}
+        <raul-alert heading="Information Alert" content="This can be a single or multi line text description. The CTA below is also optional." rounded variant="information" />
+      </div>
+    );
   }
 }

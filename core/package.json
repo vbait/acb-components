@@ -13,7 +13,7 @@
   "unpkg": "dist/acb-components/acb-components.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/vbait/acb-components"
   },
   "files": [
     "dist/",
@@ -24,23 +24,36 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "lint": "eslint src/**/*{.ts,.tsx}",
+    "eslint": "./node_modules/.bin/eslint src/**/*{.ts,.tsx}",
+    "lint": "npm run lint.ts && npm run lint.sass && npm run prettier -- --write --cache",
+    "lint.fix": "npm run lint.ts.fix && npm run lint.sass.fix && npm run prettier -- --write --cache",
+    "lint.sass": "stylelint \"src/**/*.scss\"",
+    "lint.sass.fix": "npm run lint.sass -- --fix",
+    "lint.ts": "npm run eslint",
+    "lint.ts.fix": "npm run eslint -- --fix",
+    "prettier": "./node_modules/.bin/prettier \"./src/**/*.{html,ts,tsx,js,jsx}\"",
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@realpage/raul3": "^0.36.17",
     "@stencil/core": "^3.0.0"
   },
   "devDependencies": {
     "@stencil-community/eslint-plugin": "^0.5.0",
-    "@stencil-community/postcss": "^2.1.0",
     "@stencil/react-output-target": "^0.4.0",
-    "@types/autoprefixer": "^10.2.0",
+    "@stencil/sass": "^2.0.3",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
-    "autoprefixer": "^10.4.13",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.2",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
-    "puppeteer": "^19.5.2"
+    "prettier": "^2.8.4",
+    "puppeteer": "^19.5.2",
+    "stylelint": "^14.16.1",
+    "stylelint-order": "^6.0.1"
   },
   "license": "MIT"
 }
