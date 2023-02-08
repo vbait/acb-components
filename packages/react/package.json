@@ -10,10 +10,9 @@
   },
   "scripts": {
     "build": "npm run clean && npm run compile",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "compile": "npm run tsc",
-    "tsc": "tsc -p .",
-    "rollup": "rollup -c"
+    "tsc": "tsc -p ."
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",

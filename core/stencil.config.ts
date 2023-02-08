@@ -1,6 +1,8 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { components as ionComponents } from '@ionic/core/dist/docs.json';
+// import { components as ionComponents } from '@realpage/raul3/docs.json';
 
 export const config: Config = {
   namespace: 'acb-components',
@@ -14,9 +16,10 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@vbait/components-core',
       proxiesFile: '../packages/react/src/components.ts',
-      includeDefineCustomElements: true,
-      includePolyfills: true,
-      excludeComponents: [],
+      includeImportCustomElements: true,
+      includePolyfills: false,
+      includeDefineCustomElements: false,
+      excludeComponents: ionComponents.map(c => c.tag).concat(['ion-icon', 'ion-picker-column', 'ion-picker-column-internal', 'ion-picker-internal', 'ion-select-popover']),
     }),
     {
       type: 'dist',
@@ -24,18 +27,19 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
-      // dir: 'components',
-      // copy: [
-      //   {
-      //     src: '../scripts/custom-elements',
-      //     dest: 'components',
-      //     warn: true,
-      //   },
-      // ],
-      // includeGlobalScripts: false,
+      dir: 'components',
+      copy: [
+        {
+          src: '../scripts/custom-elements',
+          dest: 'components',
+          warn: true,
+        },
+      ],
+      includeGlobalScripts: false,
     },
     {
-      type: 'docs-readme',
+      type: 'docs-json',
+      file: '../docs/core.json',
     },
     {
       type: 'docs-vscode',

@@ -16,11 +16,12 @@
     "url": "https://github.com/vbait/acb-components"
   },
   "files": [
+    "components/",
     "dist/",
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs",
+    "build": "stencil build --docs-json dist/docs.json",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
@@ -35,6 +36,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@ionic/core": "^6.5.3",
     "@realpage/raul3": "^0.36.17",
     "@stencil/core": "^3.0.0"
   },
