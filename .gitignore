@@ -29,4 +29,7 @@ core/loader/
 core/www/
 .stencil/
 
+# storybook
+storybook-static
+
 .npmrc

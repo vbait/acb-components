@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-09T15:06:45",
+  "timestamp": "2023-02-09T17:42:54",
   "compiler": {
     "name": "@stencil/core",
     "version": "3.0.0",
@@ -72,16 +72,16 @@
       "parts": [],
       "dependents": [],
       "dependencies": [
-        "raul-button",
+        "ion-button",
         "raul-alert"
       ],
       "dependencyGraph": {
         "my-component": [
-          "raul-button",
+          "ion-button",
           "raul-alert"
         ],
-        "raul-button": [
-          "raul-icon"
+        "ion-button": [
+          "ion-ripple-effect"
         ],
         "raul-alert": [
           "raul-icon"
