@@ -1,4 +1,4 @@
-// import '@realpage/raul3';
+import '@realpage/raul3';
 import '@ionic/core';
 
 export const initialize = () => {

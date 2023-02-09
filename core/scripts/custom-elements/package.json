@@ -1,5 +1,5 @@
 {
-  "name": "@vbait/components-core/components",
+  "name": "@vbaitacb/core/components",
   "version": "0.0.0",
   "description": "Components exported as custom elements, extending HTMLElement.",
   "main": "./index.js",

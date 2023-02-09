@@ -1,5 +1,5 @@
 {
-  "name": "@vbait/components-core",
+  "name": "@vbaitacb/core",
   "version": "0.0.3",
   "private": false,
   "description": "Stencil Component Starter",
@@ -10,7 +10,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/acb-components/acb-components.esm.js",
+  "unpkg": "dist/vbaitacb/vbaitacb.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vbait/acb-components"
@@ -21,7 +21,8 @@
     "loader/"
   ],
   "scripts": {
-    "build": "stencil build --docs-json dist/docs.json",
+    "build": "npm run clean && stencil build --docs-json dist/docs.json",
+    "clean": "node scripts/clean.js",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
