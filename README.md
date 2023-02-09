@@ -1,4 +1,4 @@
-## [DEMO](https://vbait.github.io/acb-components/){:target="\_blank"}
+## <a href="https://vbait.github.io/acb-components/" target="_blank">DEMO</a>
 
 ## Packages:
 
