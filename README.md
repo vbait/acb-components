@@ -1,8 +1,34 @@
-# acb-components
+## Packages:
 
-## npx lerna bootstrap
+- core [`README.md`](core/README.md)
+- react [`README.md`](packages/react/README.md)
 
-## npx lerna run build
+## Basic Setup
+
+```bash
+npm install
+```
+
+### We use [lerna](https://lerna.js.org/docs/features/run-tasks) to install dependencies and create the build
+
+<br />
+install dependencies and create simlinks between packages:
+
+```bash
+npm run bootstrap
+```
+
+change versions of packages:
+
+```bash
+npm run version
+```
+
+run build command for all packages:
+
+```bash
+npm run build
+```
 
 <br /><br />
 
