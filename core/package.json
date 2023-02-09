@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@ionic/core": "^6.5.3",
-    "@realpage/raul3": "^0.36.18-0",
+    "@realpage/raul3": "^0.36.18",
     "@stencil/core": "^3.0.0",
     "moment": "^2.24.0"
   },
