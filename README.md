@@ -1,4 +1,4 @@
-## [DEMO](https://vbait.github.io/acb-components/)
+## [DEMO](https://vbait.github.io/acb-components/){:target="\_blank"}
 
 ## Packages:
 
