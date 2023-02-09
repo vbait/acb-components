@@ -22,9 +22,9 @@
     "loader/"
   ],
   "scripts": {
-    "build": "npm run clean && stencil build --docs-json dist/docs.json",
+    "build": "npm run clean && cross-env NODE_ENV=production stencil build --docs-json dist/docs.json",
     "clean": "node scripts/clean.js",
-    "start": "stencil build --dev --watch --serve",
+    "start": "cross-env NODE_ENV=development stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "eslint": "./node_modules/.bin/eslint src/**/*{.ts,.tsx}",
@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@ionic/core": "^6.5.3",
-    "@realpage/raul3": "^0.36.17",
+    "@realpage/raul3": "^0.36.18-0",
     "@stencil/core": "^3.0.0"
   },
   "devDependencies": {
@@ -47,9 +47,10 @@
     "@stencil/react-output-target": "^0.4.0",
     "@stencil/sass": "^2.0.3",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.11",
+    "@types/node": "^16.18.12",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.33.0",
     "eslint-plugin-react": "^7.32.2",
     "jest": "^27.5.1",

@@ -4,7 +4,7 @@ import { format } from '../../utils/utils';
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: true,
+  shadow: false,
 })
 export class MyComponent {
   /**
@@ -30,7 +30,7 @@ export class MyComponent {
     return (
       <div>
         Hello, World! I'm {this.getText()}
-        <ion-button>Click Me</ion-button>
+        <raul-button>Click Me</raul-button>
         <raul-alert heading="Information Alert" content="This can be a single or multi line text description. The CTA below is also optional." rounded variant="information" />
       </div>
     );

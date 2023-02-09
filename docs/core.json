@@ -1,5 +1,5 @@
 {
-  "timestamp": "2023-02-09T12:05:19",
+  "timestamp": "2023-02-09T15:06:45",
   "compiler": {
     "name": "@stencil/core",
     "version": "3.0.0",
@@ -8,7 +8,7 @@
   "components": [
     {
       "filePath": "./src/components/my-component/my-component.tsx",
-      "encapsulation": "shadow",
+      "encapsulation": "none",
       "tag": "my-component",
       "readme": "# my-component\n\n\n",
       "docs": "",
@@ -72,16 +72,16 @@
       "parts": [],
       "dependents": [],
       "dependencies": [
-        "ion-button",
+        "raul-button",
         "raul-alert"
       ],
       "dependencyGraph": {
         "my-component": [
-          "ion-button",
+          "raul-button",
           "raul-alert"
         ],
-        "ion-button": [
-          "ion-ripple-effect"
+        "raul-button": [
+          "raul-icon"
         ],
         "raul-alert": [
           "raul-icon"

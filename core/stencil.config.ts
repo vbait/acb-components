@@ -4,6 +4,8 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 import { components as ionComponents } from '@ionic/core/dist/docs.json';
 import { components as raulComponents } from '@realpage/raul3/collection/docs.json';
 
+// const isProduction = process.env.NODE_ENV === 'production';
+
 const excludeComponents = [
   ...ionComponents.map(c => c.tag),
   ...raulComponents.map(c => c.tag),
@@ -60,4 +62,5 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  testing: { browserExecutablePath: '/usr/bin/chromium-browser' },
 };
