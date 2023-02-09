@@ -1,12 +1,19 @@
 {
+  "name": "vbaitacb",
   "private": true,
   "description": "mono-repo root package.json, used mainly to execute build scripts. This package is not published to npm.",
   "devDependencies": {
     "lerna": "^6.4.1",
     "semver": "^5.5.0"
   },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "version": "lerna version",
+    "link": "lerna link",
+    "clean": "lerna clean"
+  },
   "engines": {
     "node": ">= 16"
-  },
-  "name": "vbaitacb"
+  }
 }
