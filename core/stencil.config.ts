@@ -7,8 +7,8 @@ import { components as raulComponents } from '@realpage/raul3/collection/docs.js
 // const isProduction = process.env.NODE_ENV === 'production';
 
 const excludeComponents = [
-  ...ionComponents.map(c => c.tag),
-  ...raulComponents.map(c => c.tag),
+  ...ionComponents.map((c) => c.tag),
+  ...raulComponents.map((c) => c.tag),
   'ion-icon',
   'ion-picker-column',
   'ion-picker-column-internal',
@@ -62,5 +62,5 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  testing: { browserExecutablePath: '/usr/bin/chromium-browser' },
+  enableCache: true,
 };

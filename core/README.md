@@ -23,6 +23,10 @@ To run the unit tests for the components, run:
 npm test
 ```
 
+### if you have problems with Chrome in WSL then follow [these steps](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps#install-google-chrome-for-linux) from Microsoft to install Chrome on WSL.
+
+<br />
+
 Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
 
 ## Naming Components

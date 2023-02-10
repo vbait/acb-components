@@ -12,7 +12,7 @@
     "version": "lerna version",
     "link": "lerna link",
     "clean": "lerna clean",
-    "gh:pages": "cd core && npm run sb:build && npm run sb:deploy"
+    "gh.pages": "cd core && npm run sb.build && npm run sb.deploy"
   },
   "engines": {
     "node": ">= 16"
