@@ -17,7 +17,7 @@ const excludeComponents = [
 ];
 
 export const config: Config = {
-  namespace: 'vbaitacb',
+  namespace: 'vbait',
   autoprefixCss: true,
   plugins: [sass()],
   globalScript: 'src/global/index.ts',
@@ -26,7 +26,7 @@ export const config: Config = {
   bundles: [{ components: ['my-component'] }],
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: '@vbaitacb/core',
+      componentCorePackage: '@vbait/core',
       proxiesFile: '../packages/react/src/components.ts',
       includeImportCustomElements: true,
       includePolyfills: false,

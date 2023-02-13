@@ -1,5 +1,5 @@
 {
-  "name": "vbaitacb",
+  "name": "vbait",
   "private": true,
   "description": "mono-repo root package.json, used mainly to execute build scripts. This package is not published to npm.",
   "devDependencies": {

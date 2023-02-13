@@ -1,5 +1,5 @@
 {
-  "name": "@vbaitacb/react",
+  "name": "@vbait/react",
   "sideEffects": false,
   "version": "0.0.1",
   "private": false,
@@ -16,7 +16,7 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist/"
   ],
@@ -28,12 +28,10 @@
     "jest": "^23.0.0",
     "jest-dom": "^3.0.2",
     "np": "^3.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@vbaitacb/core": "^0.0.1"
+    "@vbait/core": "^0.0.1"
   },
   "peerDependencies": {
     "react": "^18.2.0",

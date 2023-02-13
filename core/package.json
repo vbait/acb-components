@@ -1,5 +1,5 @@
 {
-  "name": "@vbaitacb/core",
+  "name": "@vbait/core",
   "version": "0.0.1",
   "private": false,
   "description": "Stencil Component Starter",
@@ -12,7 +12,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "types": "dist/types/index.d.ts",
-  "unpkg": "dist/vbaitacb/vbaitacb.esm.js",
+  "unpkg": "dist/vbait/vbait.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/vbait/acb-components"
@@ -44,10 +44,13 @@
     "sb.deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
+    "@stencil/core": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@ionic/core": "^6.5.3",
-    "@realpage/raul3": "^0.36.18",
-    "@stencil/core": "^3.0.0",
-    "moment": "^2.24.0"
+    "@realpage/raul3": "^0.36.18"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -73,10 +76,12 @@
     "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
+    "moment": "^2.24.0",
     "prettier": "^2.8.4",
     "puppeteer": "^19.5.2",
     "stylelint": "^14.16.1",
-    "stylelint-order": "^6.0.1"
+    "stylelint-order": "^6.0.1",
+    "typescript": "^4.0.5"
   },
   "license": "MIT",
   "jest": {
