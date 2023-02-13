@@ -1,6 +1,6 @@
 {
   "name": "@vbait/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "Stencil Component Starter",
   "homepage": "https://vbait.github.io/acb-components/",
@@ -47,10 +47,10 @@
     "@stencil/core": "^3.0.0"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@ionic/core": "^6.5.3",
-    "@realpage/raul3": "^0.36.18"
+    "@realpage/raul3": "^0.36.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
