@@ -48,12 +48,12 @@
   },
   "peerDependencies": {
     "@ionic/core": "^6.5.3",
-    "@realpage/raul3": "^0.36.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@realpage/raul3": "^0.36.18"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
+    "@ionic/core": "^6.5.3",
+    "@realpage/raul3": "^0.36.18",
     "@stencil-community/eslint-plugin": "^0.5.0",
     "@stencil/react-output-target": "^0.4.0",
     "@stencil/sass": "^2.0.3",
