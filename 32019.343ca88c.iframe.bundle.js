@@ -1,0 +1,1 @@
+(self.webpackChunk_vbait_core=self.webpackChunk_vbait_core||[]).push([[32019],{"./dist/esm-es5/index.js":()=>{}}]);

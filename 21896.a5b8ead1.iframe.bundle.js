@@ -1,0 +1,2 @@
+/*! For license information please see 21896.a5b8ead1.iframe.bundle.js.LICENSE.txt */
+"use strict";(self.webpackChunk_vbait_core=self.webpackChunk_vbait_core||[]).push([[21896],{"./dist/esm-es5/index-5aa6aa3e.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{w:()=>win});var win="undefined"!=typeof window?window:void 0}}]);
