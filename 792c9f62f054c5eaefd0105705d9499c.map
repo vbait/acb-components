@@ -1,0 +1,1 @@
+{"version":3,"names":["window"],"sources":["src/global/vb-global.ts"],"sourcesContent":["import '@ionic/core';\nimport '@realpage/raul3';\n\nexport const initialize = () => {\n  if (typeof (window as any) === 'undefined') {\n    return;\n  }\n  console.log('RUN VBAIT CORE');\n};\n\nexport default initialize;\n"],"mappings":"0BACA,UAAAA,SAAA,aAEA,M"}
