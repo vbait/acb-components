@@ -11,7 +11,7 @@
   "jsnext:main": "dist/esm/index.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/types/interface.d.ts",
   "unpkg": "dist/vbait/vbait.esm.js",
   "repository": {
     "type": "git",
