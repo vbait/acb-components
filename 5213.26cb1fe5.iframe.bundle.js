@@ -1,0 +1,2 @@
+/*! For license information please see 5213.26cb1fe5.iframe.bundle.js.LICENSE.txt */
+"use strict";(self.webpackChunk_vbait_core=self.webpackChunk_vbait_core||[]).push([[5213],{"./node_modules/@ionic/core/dist/esm-es5/dir-e8b767a8.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{i:()=>isRTL});var isRTL=function(r){return r&&""!==r.dir?"rtl"===r.dir.toLowerCase():"rtl"===(null===document||void 0===document?void 0:document.dir.toLowerCase())}}}]);

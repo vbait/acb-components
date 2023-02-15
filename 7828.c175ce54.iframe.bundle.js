@@ -1,0 +1,2 @@
+/*! For license information please see 7828.c175ce54.iframe.bundle.js.LICENSE.txt */
+"use strict";(self.webpackChunk_vbait_core=self.webpackChunk_vbait_core||[]).push([[7828],{"./node_modules/@ionic/core/dist/esm-es5/app-globals-a49ec076.js":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{g:()=>globalScripts});var globalScripts=__webpack_require__("./node_modules/@ionic/core/dist/esm-es5/ionic-global-c74e4951.js").i}}]);
