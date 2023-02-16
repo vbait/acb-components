@@ -18,13 +18,14 @@ const excludeComponents = [
 ];
 
 export const config: Config = {
+  // with ts config we can fix bug with external dependencies:
+  // https://github.com/ionic-team/stencil/issues/2829
+  tsconfig: `tsconfig${isProduction ? '.prod' : ''}.json`,
+
   namespace: 'vbait',
   env: {},
   autoprefixCss: true,
   plugins: [sass()],
-  // with ts config we can fix bug with external dependencies:
-  // https://github.com/ionic-team/stencil/issues/2829
-  tsconfig: `tsconfig${isProduction ? '.prod' : ''}.json`,
   globalScript: `src/global/vb-global.ts`,
   globalStyle: 'src/css/main.scss',
   buildEs5: 'prod',
