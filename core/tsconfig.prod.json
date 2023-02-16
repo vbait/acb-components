@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "paths": {
+      "@ionic/core": ["./scripts/fake-entry.js"],
+      "@realpage/raul3": ["./scripts/fake-entry.js"]
+    }
+  }
+}

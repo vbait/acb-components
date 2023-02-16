@@ -5,7 +5,7 @@ import { components as ionComponents } from '@ionic/core/dist/docs.json';
 import { components as raulComponents } from '@realpage/raul3/collection/docs.json';
 
 // @ts-ignore
-// const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
 const excludeComponents = [
   ...ionComponents.map((c) => c.tag),
@@ -19,8 +19,12 @@ const excludeComponents = [
 
 export const config: Config = {
   namespace: 'vbait',
+  env: {},
   autoprefixCss: true,
   plugins: [sass()],
+  // with ts config we can fix bug with external dependencies:
+  // https://github.com/ionic-team/stencil/issues/2829
+  tsconfig: `tsconfig${isProduction ? '.prod' : ''}.json`,
   globalScript: `src/global/vb-global.ts`,
   globalStyle: 'src/css/main.scss',
   buildEs5: 'prod',
