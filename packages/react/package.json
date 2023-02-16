@@ -1,7 +1,7 @@
 {
   "name": "@vbait/react",
   "sideEffects": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "description": "React specific wrapper for component-library",
   "repository": {
@@ -31,7 +31,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@vbait/core": "^0.0.4"
+    "@vbait/core": "^0.0.5"
   },
   "peerDependencies": {
     "react": "^18.2.0",
