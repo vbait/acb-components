@@ -27,6 +27,29 @@ npm test
 
 <br />
 
+## [Storybook](https://storybook.js.org/docs/html/get-started/introduction)
+
+run storybook in dev mode:
+
+```bash
+npm run sb
+```
+
+build storybook:
+
+```bash
+npm run build
+npm run sb.build
+```
+
+deploy the app to github pages:
+
+```bash
+npm run sb.deploy
+```
+
+<br />
+
 Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
 
 ## Naming Components
